@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Make sure body takes full height */
+}
+
+/* Navbar */
+.navbar {
+    width: 100vw;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Products Section */
+.products {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #555;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Cart Section */
+.cart {
+    margin: 20px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart th,
+.cart td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.cart th {
+    background-color: #333;
+    color: #fff;
+}
+
+#clear-cart-btn, #place-order-btn {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#clear-cart-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+#place-order-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#clear-cart-btn:hover {
+    background-color: #d32f2f; /* Darker red */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+#place-order-btn:hover {
+    background-color: #388E3C; /* Darker green */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+/* Button Focus and Click Effects */
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translateY(1px); /* Slight downward movement */
+}
+
+/* Orders Section */
+.orders-container {
+    margin: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.orders-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Back to Home Button */
+.back-home {
+    color: white;
+    text-decoration: none;
+}
+
+/* Reset Button Style */
+button {
+    all: unset; /* Resets all inherited styles */
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Additional Spacing and Margin for Buttons */
+button {
+    margin: 10px;
+}
+
+
